@@ -18,5 +18,9 @@
     "knowledge-base",
     "ecommerce",
     "mcp"
-  ]
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://superbotapp.ai/legal/privacy",
+  "documentation": "https://superbotapp.ai/docs/mcp",
+  "support": "mailto:support@superbotapp.ai"
 }
