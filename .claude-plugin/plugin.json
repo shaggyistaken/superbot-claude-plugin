@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "superbot",
+  "displayName": "SuperBot",
+  "version": "1.0.1",
+  "description": "Investigate support conversations, measure support health, and improve SuperBot knowledge from Claude Code and Cowork.",
+  "author": {
+    "name": "AI Understanding",
+    "email": "support@superbotapp.ai",
+    "url": "https://superbotapp.ai"
+  },
+  "homepage": "https://superbotapp.ai/docs/mcp",
+  "repository": "https://github.com/shaggyistaken/superbot-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "customer-support",
+    "support-analytics",
+    "knowledge-base",
+    "ecommerce",
+    "mcp"
+  ]
+}

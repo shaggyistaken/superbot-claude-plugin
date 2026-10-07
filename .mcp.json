@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "superbot": {
+      "type": "http",
+      "url": "https://superbotapp.ai/api/mcp"
+    }
+  }
+}
