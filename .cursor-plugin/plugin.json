@@ -1,0 +1,15 @@
+{
+  "name": "superbot",
+  "displayName": "SuperBot",
+  "version": "1.0.1",
+  "description": "Investigate support conversations, measure support health, and improve your SuperBot AI support agent's knowledge from Cursor.",
+  "author": {
+    "name": "AI Understanding",
+    "email": "support@superbotapp.ai"
+  },
+  "homepage": "https://superbotapp.ai/docs/mcp",
+  "repository": "https://github.com/shaggyistaken/superbot-claude-plugin",
+  "license": "MIT",
+  "keywords": ["customer-support", "support-analytics", "knowledge-base", "ecommerce", "chatbot", "mcp"],
+  "logo": "assets/logo.png"
+}

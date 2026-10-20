@@ -8,7 +8,7 @@ for safe support operations.
 ## Install
 
 The plugin is designed for the Claude plugin directory. For local testing from
-Claude Code, clone this repository and run from its parent folder:
+Claude Code, clone this repository and run:
 
 ```text
 claude --plugin-dir ./superbot-claude-plugin
@@ -17,6 +17,10 @@ claude --plugin-dir ./superbot-claude-plugin
 When the plugin is enabled, Claude will ask you to authenticate the remote
 SuperBot server with OAuth. Sign in to the SuperBot workspace you want to use
 and approve only the permissions you intend to grant.
+
+## Cursor
+
+The same repository is a Cursor plugin (`.cursor-plugin/plugin.json`). Install it from the Cursor Marketplace, or add the MCP server yourself in Cursor settings with the URL `https://superbotapp.ai/api/mcp`. The first tool call opens SuperBot's sign-in to connect your workspace. The plugin ships the `support-operations` skill and a rule that tells the agent when to use SuperBot's tools.
 
 ## What it includes
 
