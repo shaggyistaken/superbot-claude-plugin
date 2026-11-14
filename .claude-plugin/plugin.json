@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "superbot",
   "displayName": "SuperBot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Investigate support conversations, measure support health, and improve SuperBot knowledge from Claude Code and Cowork.",
   "author": {
     "name": "AI Understanding",
@@ -21,6 +21,6 @@
   ],
   "icon": ".claude-plugin/icon.png",
   "privacyPolicyUrl": "https://superbotapp.ai/legal/privacy",
-  "documentation": "https://superbotapp.ai/docs/mcp",
-  "support": "mailto:support@superbotapp.ai"
+  "documentationUrl": "https://superbotapp.ai/docs/mcp",
+  "supportUrl": "https://superbotapp.ai/support"
 }
