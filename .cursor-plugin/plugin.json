@@ -1,7 +1,7 @@
 {
   "name": "superbot",
   "displayName": "SuperBot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Investigate support conversations, measure support health, and improve your SuperBot AI support agent's knowledge from Cursor.",
   "author": {
     "name": "AI Understanding",

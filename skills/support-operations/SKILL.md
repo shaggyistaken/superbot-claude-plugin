@@ -12,17 +12,24 @@ operations, not for answering shoppers directly.
 ## Safe investigation workflow
 
 1. Start with `get_support_overview` for a time-bounded health snapshot or
-   `list_recent_conversations` for an inbox-style view.
+   `list_recent_conversations` for an inbox-style view. To see the
+   conversations behind a number, filter `list_recent_conversations` by
+   `sentiment`, `channel`, `days`, `max_csat` (2 for unhappy customers) or
+   `escalated`.
 2. For a specific issue, use `search` and then `fetch` with the returned
-   conversation id. Prefer source-linked findings over unsupported summaries.
+   conversation id. Every word of the query must match, in any order; wrap it
+   in double quotes for an exact phrase. Prefer source-linked findings over
+   unsupported summaries.
 3. Use `list_unanswered_questions` for triage. Treat confirmed human
    escalations separately from open or pending conversations; open or pending
    alone does not prove that the AI failed.
 4. Use `get_insights` for topics, repeated questions and trends against the
    previous period, and `list_training_gaps` for questions the AI could not
-   answer, with evidence (AI fallback reply, human escalation, low CSAT).
+   answer, with evidence (AI fallback reply, human escalation, low CSAT) and
+   the latest answers visitors marked not helpful.
 5. Before suggesting a knowledge improvement, use `search_knowledge` to check
-   whether the workspace already contains the answer. Use
+   whether the workspace already contains the answer. Call it without a query
+   to browse everything, or with `category` to list one category. Use
    `list_knowledge_sources` to audit what the AI learns from and spot failed
    or stale sources.
 6. Use `list_leads` for captured sales leads. Contact details are personal
@@ -35,8 +42,9 @@ operations, not for answering shoppers directly.
 `add_trained_answer` is additive and changes future visitor-facing answers.
 Never call it unless the user has approved the exact question and exact answer
 in the current conversation. Do not rewrite, delete, or silently “clean up” an
-existing answer. If the exact question already exists, report that no change
-was made.
+existing answer. If the question already exists with a different answer, the
+tool returns the existing answer and changes nothing: show it to the user and
+point them to AI Training in the SuperBot dashboard to edit it.
 
 ## Honest boundaries
 
